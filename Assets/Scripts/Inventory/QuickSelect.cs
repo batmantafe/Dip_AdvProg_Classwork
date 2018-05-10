@@ -142,7 +142,7 @@ public class QuickSelect : MonoBehaviour
     {
         mouse = Input.mousePosition;
         input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        input.y = -Input.GetAxis("Vertical");
 
         // Distance
         mouseDistance = Mathf.Sqrt(Mathf.Pow((mouse.x - circleCenter.x), 2)
